@@ -9,7 +9,9 @@ public class Question12 {
         int b = attendence.nextInt();
         double c = ((b*100)/a);
         System.out.println(c);
-        if (c > 75) {
+        System.out.println("Any medical condition?");
+        char d = attendence.next().charAt(0) ;
+        if (c>75&&d=='y') {
             System.out.println("You are having " + c +"% , hence allowed");
         } else {
             System.out.println("Not allowed");
